@@ -1,9 +1,16 @@
 # SpringBoot-JPA
 scratch the server surface, 짬 날 때마다 서버 공부하는 repo. Kotlin은 언제 공부하지?  
-`InteliJ`, `JAVA`, `Spring Boot`, `gradle`, `JPA`
+`InteliJ`, `JAVA 11`, `Spring Boot`, `gradle`, `JPA`
 
 ### dependecies
 `Spring Web Starter`, `Thymeleaf`, `Spring Data JPA`, `H2 Database`
 
 ### 진도
-- 03/17: [1강 09:54](https://www.inflearn.com/course/%EC%8A%A4%ED%94%84%EB%A7%81%EB%B6%80%ED%8A%B8-JPA-%ED%99%9C%EC%9A%A9-1/lecture/21871?volume=1.00)
+
+**Build RESTFUL APIS using Kotlin and Spring Boot**  
+- 04/10
+  - [1강: Course Introduction](https://www.udemy.com/course/build-restful-apis-using-kotlin-and-spring-boot/learn/lecture/30033430#content)  
+    Kotlin을 사용 언어로 채택하게 된 이유?
+    1) 이미 많은 기업들(Google, Amazon, Pivotal, Netflix..) 등이 서버 개발 언어로 Kotlin 채택
+    2) 최근 서버 개발 언어로 주목받기 시작하는 등 가벼운 이유로 채택
+
