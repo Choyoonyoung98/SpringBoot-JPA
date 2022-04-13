@@ -34,4 +34,14 @@ scratch the server surface, 짬 날 때마다 서버 공부하는 repo. Kotlin�
 `*.java` -> Java Compiler -> `*.class` -> `.jar`  
 `*.kt` -> Kotlin Compiler -> `*.class` -> `.jar`  
 
+**val & var**
+- 어떤 변수든 코틀린은 `val` 또는 `var`로 정의되어야 한다
+- `val`: 불변하는 상수 변수를 선언한다(swift에서의 `let`)  
+```
+val name: String = "Dilp"
+```
+- `var`: 변경 가능한 변수를 선언한다  
+```
+var age: Int = 33
+```
 
