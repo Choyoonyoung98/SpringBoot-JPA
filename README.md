@@ -28,9 +28,10 @@ scratch the server surface, 짬 날 때마다 서버 공부하는 repo. Kotlin�
 - Spring
 - Micronaut
 
-**Kotlin, JVM 위에서 어떻게 동작할까?**
-Java가 JVM 위에서 동작하는 방식과 유사   
+**Kotlin, JVM 위에서 어떻게 동작할까?**  
+- Java가 JVM 위에서 동작하는 방식과 유사   
+- Kotlin Compiler 존재 이유: JVM은 오직 바이트코드만을 이해하기 때문에   
 `*.java` -> Java Compiler -> `*.class` -> `.jar`  
 `*.kt` -> Kotlin Compiler -> `*.class` -> `.jar`  
-* Kotlin Compiler 존재 이유: JVM은 오직 바이트코드만을 이해하기 때문에   
+
 
