@@ -80,5 +80,4 @@ println(medal2)
 
 **Top Level Properties**
 - Kotlin에서는 클래스에 속해있지 않은 top-level properties가 있다
-
-    "NO MEDAL"
+  - JAVA에서는 
