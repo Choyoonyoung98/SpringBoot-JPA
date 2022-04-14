@@ -78,4 +78,7 @@ println(medal2)
   - Java 앱에서는 앱의 전역에 걸쳐 사용되는 공통 로직을 담은 정적 메서드들만을 포함하고 있는 클래스를 찾을 수 있는데,  
   - Kotlin은 top level 함수를 사용함으로써 위와 같은 상황을 방지할 수 있게 한다
 
-**
+**Top Level Properties**
+- Kotlin에서는 클래스에 속해있지 않은 top-level properties가 있다
+
+    "NO MEDAL"
