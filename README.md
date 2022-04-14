@@ -75,9 +75,12 @@ println(medal2)
 **Top Level Functions**
 - Kotlin에서 클래스에 속해있지 않은 함수는 top-level 함수라고 부른다(클래스가 아닌, Kotlin file에 선언되어 있는 함수)
   - Java에서는, 함수는 오직 클래스의 일부여야만 한다
-  - Java 앱에서는 앱의 전역에 걸쳐 사용되는 공통 로직을 담은 정적 메서드들만을 포함하고 있는 클래스를 찾을 수 있는데,  
-  - Kotlin은 top level 함수를 사용함으로써 위와 같은 상황을 방지할 수 있게 한다
+  - Java 앱에서는 앱의 전역에 걸쳐 사용되는 공통 로직을 담은 정적 메서드들만을 포함하고 있는 클래스를 찾을 수 있는데,    
+  -> Kotlin은 top level 함수를 사용함으로써 위와 같은 상황을 방지할 수 있게 한다  
 
 **Top Level Properties**
 - Kotlin에서는 클래스에 속해있지 않은 top-level properties가 있다
-  - JAVA에서는 
+  - JAVA에서는 클래스 또는 인터페이스 안에서만 properties를 정의할 수 있었다
+  - 자바 앱에서는 앱의 전역에 걸쳐 사용되는 정적 상수를 클래스 파일 안에 정의한다.
+  -> Kotlin은 top level properties를 사용함으로써 위와 같은 상황을 방지할 수 있게 한다  
+
