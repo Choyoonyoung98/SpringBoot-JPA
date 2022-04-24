@@ -5,6 +5,12 @@ scratch the server surface, 짬 날 때마다 서버 공부하는 repo. Kotlin�
 ### dependecies
 `Spring Web Starter`, `Thymeleaf`, `Spring Data JPA`, `H2 Database`
 
+### Kotlin styleguide
+- [코틀린 스타일가이드 공식문서](https://developer.android.com/kotlin/style-guide)
+- [코틀린 컨밴션](https://kotlinlang.org/docs/coding-conventions.html#names-for-test-methods)
+- [raywenderlich kotlin style Guide](https://github.com/raywenderlich/kotlin-style-guide)
+- [코틀린 공식 사이트에서 제공하는 코드 컨밴션 InteliJ에 적용하는 법](https://velog.io/@lsb156/IntelliJ-Kotlin-Code-Style-%EC%84%A4%EC%A0%95%EB%B2%95)
+
 ### 진도
 
 **[Build RESTFUL APIS using Kotlin and Spring Boot](https://www.udemy.com/course/build-restful-apis-using-kotlin-and-spring-boot/learn/lecture/30033430#content)**    
