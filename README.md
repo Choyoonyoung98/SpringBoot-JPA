@@ -88,7 +88,6 @@ println(medal2)
 - 데이터만을 포함하고 있는 클래스는 data class라고 분류된다
 - DTO, domain class, value object class는 모두 data class로 분류된다
 - class 앞에 data 키워드를 선언할 경우 자동으로 `equals()`, `hashCode()`, `toString()` 메서드가 생성된다  
-
 ```
 data class Course(
   val id: Int,
@@ -96,3 +95,11 @@ data class Course(
   val author: String
 )
 ```
+
+- data class 인스턴스는 일반 class 인스턴스와 달리 printlnt으로도 내부 데이터가 찍힌다
+> 일반 class
+```
+Course(id=1, name=Good story, author=yoonyoung)
+```
+
+
