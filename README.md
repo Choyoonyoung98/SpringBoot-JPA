@@ -96,8 +96,8 @@ data class Course(
 )
 ```
 
-- data class 인스턴스는 일반 class 인스턴스와 달리 printlnt으로도 내부 데이터가 찍힌다
-> 일반 class
+- data class 인스턴스는 일반 class 인스턴스와 달리 print로도 내부 데이터가 찍힌다
+> 일반 class를 print 찍으면 쓰레기 데이터가 찍힌다
 ```
 Course(id=1, name=Good story, author=yoonyoung)
 ```
