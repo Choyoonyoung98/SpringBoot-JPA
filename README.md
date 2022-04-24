@@ -101,5 +101,11 @@ data class Course(
 ```
 Course(id=1, name=Good story, author=yoonyoung)
 ```
+  
+(용도 & 장점)  
+1. data class는 주로 data container 역할을 할 클래스를 위한 것이다
+2. 데이터 변경을 위한 많은 함수를 자동으로 생성해준다
+3. `copy()` 메서드를 통해 객체를 클론하기 더 쉬워졌다
+
 
 
