@@ -84,3 +84,15 @@ println(medal2)
   - 자바 앱에서는 앱의 전역에 걸쳐 사용되는 정적 상수를 클래스 파일 안에 정의한다.
   -> Kotlin은 top level properties를 사용함으로써 위와 같은 상황을 방지할 수 있게 한다  
 
+**data class**
+- 데이터만을 포함하고 있는 클래스는 data class라고 분류된다
+- DTO, domain class, value object class는 모두 data class로 분류된다
+- class 앞에 data 키워드를 선언할 경우 자동으로 `equals()`, `hashCode()`, `toString()` 메서드가 생성된다  
+
+```
+data class Course(
+  val id: Int,
+  val name: String,
+  val author: String
+)
+```
