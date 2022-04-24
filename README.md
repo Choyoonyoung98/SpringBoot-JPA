@@ -108,7 +108,7 @@ Course(id=1, name=Good story, author=yoonyoung)
 3. `copy()` 메서드를 통해 객체를 클론하기 더 쉬워졌다
 
 
-## Custom Getter/Setter 사용하는 경우?
+**Custom Getter/Setter 사용하는 경우?**
  = property를 setting 하거나 getting해올 때 커스텀 로직을 상속받고싶을 경우 사용
 
 
