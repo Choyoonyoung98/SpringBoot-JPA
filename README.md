@@ -125,12 +125,43 @@ Course(id=1, name=Good story, author=yoonyoung)
 > open: 상속이 이루어질 수 있는 변경자  
 > abstract class: 상속이 이루어져야만 하는 변경자  
 
+- kotlin은 `open` 변경자로 설정해야 overriding이 가능하다
+```
+open class User(val name: String) {
+  open val isLoggedIn: Boolean = true
+  open fun login() {
+   println("Inside user login")
+  }
+}
+
+class Student(name: String): User(name, age) {
+  override val isLoggedIn: Boolean = true
+  override fun login() {
+    super.login()
+    println("Inside Student login")
+  }
+}
+```
 
 **final: 상속이 불가능한 클래스**  
 - OOP의 관점에서는 객체가 있고 해당 객체에 대한 코드를 줄이기 위해 재사용 가능했다면 재사용하는 것이 좋지만, **이러한 사용 방식은 상속하는 기반 클래스가 변경이 없는 경우에만 유효하다**  
 -> 기반 클래스가 변경이 잦은데 무분별하게 클래스를 상속하게 된다면, fragil base class 문제에 직면하게 되기 때문이다  
-=> 이러한 문제를 해결하기 위해 Kotlin에서는 class의 기본 상속 변경자를 `final`로 설정하게 되었다.
+=> 이러한 문제를 해결하기 위해 Kotlin에서는 class의 기본 상속 변경자를 `final`로 설정하게 되었다.  
 => 따라서 특정 클래스가 상속되어도 되는 경우메나 `open`이라는 변경자를 이용해 상속 가능하다
+
+**(⭐️)object keyword**
+= 클래스와 클래스의 인스턴스를 동시간대에 생성해주는 키워드  
+- Java의 singleton pattern과 유사하다
+- (단점??)object 클래스에는 생성자를 주입할 수 없다
+```
+obejct Authenticate {
+  fun authenticate(userName: String, password: String) {
+    println("User Authenticated for userName: $userName")
+  }
+}
+```
+
+
 
 
 
