@@ -161,9 +161,13 @@ obejct Authenticate {
 }
 ```
 
+**companion object**
+- Kotlin은 static에 대한 지원을 하지 않는다
+- companion object는 class에 종속된 static 기능으로 소개되고는 한다
+- class 내부에서 object를 사용하기 위해서는 companion keyword를 사용해야 한다
 
-
-> Q. kotlin object keyword constructor
-
-
-
+**Interface**
+- OOP에서의 interface는 추상 메서드를 포함한 규약을 정의한다
+- interface를 상속하고 있는 클래스는 interface를 구현해야 한다(?)
+  - interface는 추상 메서드와 비추상 메서드 모두를 가질 수 있다
+  - interface는 어떤 상태도 포함하지 않는다(?)
