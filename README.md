@@ -171,3 +171,21 @@ obejct Authenticate {
 - interface를 상속하고 있는 클래스는 interface를 구현해야 한다(?)
   - interface는 추상 메서드와 비추상 메서드 모두를 가질 수 있다
   - interface는 어떤 상태도 포함하지 않는다(?)
+
+**Visibility Modifiers in Kotlin**
+1) public: 기본 접근 연산자
+2) protected: 함수 또는 변수에 대한 접근을 클래스 내에서만 가능
+3) private: 클래스와 서브클래스에서 접근 가능
+4) internal: 모듈로부터 private하다 (?)
+
+**Type Checking & Casting**
+- `is` 연산자  
+```
+val name = "yoonyoung"
+val result = name is String
+```
+
+- `as` 연산자
+```
+
+```
