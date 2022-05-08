@@ -196,4 +196,8 @@ val name = "yoonyoung" as String
 ```
 
 **Nulls in Kotlin**
-
+```
+val length = nameNullable?.length //safe call operator
+val length = nameNullable?.length ?: 0 //Elvis operator
+println(length!!) //not null assertion
+```
