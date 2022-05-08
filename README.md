@@ -179,13 +179,21 @@ obejct Authenticate {
 4) internal: 모듈로부터 private하다 (?)
 
 **Type Checking & Casting**
-- `is` 연산자  
+- `is` 연산자: 특정 값을 명확한 타입인지 확인하는 type checking 연산자
 ```
 val name = "yoonyoung"
-val result = name is String
+val result = name is String //true or false 반환
+
+if(a is String) {    
+    // a is now treated as String
+}
 ```
 
-- `as` 연산자
+- `as` 연산자: 특정 값을 명확한 타입으로 선언하는 type casting 연산자 
+-> 값이 선언한 타입이 아니라면, `java.lang.ClassCastException` 반환
+```
+val name = "yoonyoung" as String
 ```
 
-```
+**Nulls in Kotlin**
+
