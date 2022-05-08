@@ -201,3 +201,6 @@ val length = nameNullable?.length //safe call operator
 val length = nameNullable?.length ?: 0 //Elvis operator
 println(length!!) //not null assertion
 ```
+
+**이쯤되면 궁금해지는 Kotlin 메모리 관리 방법**
+https://medium.com/@kimtaesoo188/kotlin-android-vs-swift-ios-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EB%B2%95-1c0144d4243a
