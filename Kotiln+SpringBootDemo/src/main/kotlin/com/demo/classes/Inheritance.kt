@@ -5,6 +5,16 @@ open class User(val name: String) {
     open fun login() {
         println("Inside user login")
     }
+
+    private fun secret() {
+        println("Inside user Login")
+    }
+
+    protected open fun logout() {
+        //접근연산자 open 함수명 순으로 입력 권장
+        //public override fun과 대응되는 구조라서?
+        println("Inside user Login")
+    }
 }
 
 class Student(name: String): User(name) {
@@ -19,6 +29,11 @@ class Student(name: String): User(name) {
     override fun login() {
         println("Inside Student Login")
         super.login()
+    }
+
+    override fun logout() {
+        super.logout()
+        println("Inside Student Logout")
     }
 }
 
@@ -38,4 +53,8 @@ fun main() {
     val instructor = Instructor("Yoonyoung")
     println("name is ${instructor.name}")
     instructor.login()
+
+    val user = User("yoonyoung")
+    //user.secret() private, protected 으로는 접근 x
+
 }
