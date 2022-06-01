@@ -206,7 +206,9 @@ println(length!!) //not null assertion
 https://medium.com/@kimtaesoo188/kotlin-android-vs-swift-ios-%EB%A9%94%EB%AA%A8%EB%A6%AC-%EA%B4%80%EB%A6%AC-%EB%B0%A9%EB%B2%95-1c0144d4243a
 
 **kotlin+JPA 실습환경**
-````
+
+
+```
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -247,5 +249,13 @@ tasks.withType<KotlinCompile> {
 tasks.withType<Test> {
   useJUnitPlatform()
 }
+``` 
 
-DOWNLOADCLOSE
+**Automatic Testing**
+1) Integration Test  
+= 어플리케이션의 처음부터 끝까지 테스트하는 통합 테스트
+`Controller` -> `Service` -> `Repository`
+
+2) Unit Test
+= 관심있는 클래스와 메서드, 그리고 다음 단계의 코드에 대한 mock을 테스트하는 단위테스트
+
