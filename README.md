@@ -11,7 +11,7 @@ scratch the server surface, 짬 날 때마다 서버 공부하는 repo. Kotlin�
 - [raywenderlich kotlin style Guide](https://github.com/raywenderlich/kotlin-style-guide)
 - [코틀린 공식 사이트에서 제공하는 코드 컨밴션 InteliJ에 적용하는 법](https://velog.io/@lsb156/IntelliJ-Kotlin-Code-Style-%EC%84%A4%EC%A0%95%EB%B2%95)
 
-### [H2 Database](http://localhost:8080/h2~console)
+### [H2 Database](http://localhost:8080/h2-console)
 ### 진도
 
 **[Build RESTFUL APIS using Kotlin and Spring Boot](https://www.udemy.com/course/build-restful-apis-using-kotlin-and-spring-boot/learn/lecture/30033430#content)**    
