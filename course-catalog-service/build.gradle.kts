@@ -34,6 +34,9 @@ dependencies {
 	//runtimeOnly("org.postgresql:postgresql")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.mockk:mockk:1.10.4")
+	testImplementation("com.ninja-squad:springmockk:3.0.1")
+	testImplementation("org.springframework.boot:spring-boot-starter-webflux")
 }
 
 tasks.withType<KotlinCompile> {
@@ -45,4 +48,13 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
 	useJUnitPlatform()
+}
+
+sourceSets {
+	test {
+		//7.4.1(7.1 >=)
+		java {
+			setSrcDirs(listOf("src/test/intg", "src/test/unit"))
+		}
+	}
 }
