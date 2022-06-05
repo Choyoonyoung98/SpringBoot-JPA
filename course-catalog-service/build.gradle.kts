@@ -30,7 +30,7 @@ dependencies {
 	//logging
 	implementation("io.github.microutils:kotlin-logging-jvm:2.1.21")
 
-	runtimeOnly("com.h2database:h2")
+	runtimeOnly("com.h2database:h2:1.4.197")
 	//runtimeOnly("org.postgresql:postgresql")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
