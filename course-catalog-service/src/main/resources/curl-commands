@@ -28,7 +28,7 @@ UPDATE COURSE:
 curl -i \
 -d '{"id":null, "name":"Build Restful APIs using Kotlin & SpringBoot2", "category": "Development"}' \
 -H "Content-Type: application/json" \
--X PUT http://localhost:8080/v1/courses/1
+-X PUT http://localhost:8080/v1/courses/23
 
 
 DELETE COURSE:
