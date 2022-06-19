@@ -35,7 +35,6 @@ class CourseControllerIntgTest {
 
     @Test
     fun addCourse() {
-
         val courseDTO = CourseDTO(null, "Build Restful APIs using SpringBoot and Kotlin"
             ,"Dilip Sundarraj")
 
