@@ -278,16 +278,19 @@ tasks.withType<Test> {
 = 계층 간 데이터 교환을 하기 위해 사용하는 객체로, DTO는 로직을 가지지 않는 순수한 데이터 객체(getter & setter만을 가진 클래스)
 +) VO(Value Object) = 값 오브젝트로써 값을 위해 사용. read-only 특징을 가진다.  
 
--> DTO를 사용하는 이유?
-Domain에 특정 파라미터가 모든 request, response에 필요하지 않음에도 불필요하게 사용될 수 있으며, 만약 각 API의 request와 response에 맞추기 위해 domain이 수정되어서는 안된다.  
--> 따라서 각 DTO에 필요한 데이터만 정의도어야하며, 필수 값에 대한 조건 체크하는 것이나 DTO에서 Domain으로 변환하거나, Domain에서 DTO로 변환하는 로직은 Domain이 아닌, DTO에 담겨야 한다  
--> 테스트를 추가할 때에도 각 DTO를 분리하게 되면 각각의 request에 따라 테스트 코드를 추가해줄 수 있기 때문에 요청을 모두 검증할 수 있어 테스트 코드에 대한 커버리지가 높아질 수 있다
+**DTO를 사용하는 이유?**  
+- Domain에 특정 파라미터가 모든 request, response에 필요하지 않음에도 불필요하게 사용될 수 있으며, 만약 각 API의 request와 response에 맞추기 위해 domain이 수정되어서는 안된다.   
+-> 따라서 각 DTO에 필요한 데이터만 정의도어야하며, 필수 값에 대한 조건 체크하는 것이나 DTO에서 Domain으로 변환하거나, Domain에서 DTO로 변환하는 로직은 Domain이 아닌, DTO에 담겨야 한다   
+- 테스트를 추가할 때에도 각 DTO를 분리하게 되면 각각의 request에 따라 테스트 코드를 추가해줄 수 있기 때문에 요청을 모두 검증할 수 있어 테스트 코드에 대한 커버리지가 높아질 수 있다
 
 - Bean Validation Annotation
   - @NotNull = Null만을 허용하지 않음
   - @NotEmpty = NULL, "" 둘다 허용하지 않음(" "은 허용됨)
   - @NotBlank = NULL, "", " " 모두 허용하지 않음 
 
-4) ENTITY
+4) ENTITY  
+JPA
+- @Entity = 테이블과의 매핑
+- @Table = Entity와 매핑할 테이블 지정
 5) REPOSITORY
 6) SERVICE
