@@ -260,3 +260,21 @@ tasks.withType<Test> {
 2) Unit Test
 = 관심있는 클래스와 메서드, 그리고 다음 단계의 코드에 대한 mock을 테스트하는 단위테스트
 
+**프로젝트 구조**
+1) CONTROLLER
+- @RestController
+= @Controller + @ResponseBody 
+= Spring MVC Controller + @ResponseBody
+
+- @RequestBody = HTTP body 안에 JSON을 DTO에 맵핑하는 스프링 어노테이션
+- @ResponseStatus = 응답 상태 코드(default: 200 OK)
+  - 200: HTTPStatus.OK
+  - 201: HTTPStatus.CREATED
+  - 204: HTTPStatus.NO_CONTENT
+  - 400: HTTPStatus.BAD_REQUEST
+  - 401: HTTPStatus.UNAUTHORIZED
+
+2) DTO
+4) ENTITY
+5) REPOSITORY
+6) SERVICE
