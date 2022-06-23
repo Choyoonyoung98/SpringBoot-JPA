@@ -261,6 +261,17 @@ tasks.withType<Test> {
 = 관심있는 클래스와 메서드, 그리고 다음 단계의 코드에 대한 mock을 테스트하는 단위테스트
 
 **프로젝트 구조**
+1) **View**에서 전송한 정보를 **Controller**에서 수신. 받은 정보를 **Service**에게 넘김
+2) **Service**에서 핵심 비즈니스 로직을 수행 후 DB 접근이 필요하면 **Repository**에게 요청
+3) **Repository**는 DB와 접근하기 위해 필요한 친구인데, 서비스로부터 DB에 insert 요청이 오면 DTO 객체들은 영속성 컨테이너라는 곳에 넣어뒀다가 로직이 끝나면 한번에 DB로 커밋하게 된다
+
+다른 관점에서 보면?  
+1) Client가 Request를 보낸다
+2) Request URL에 알맞은 Controller가 수신한다
+3) Controller는 넘어온 요청을 처리하기 위해 Service 호출
+4) Service는 알맞은 정보를 가공하여 Contoller에게 데이터를 넘긴다
+5) Controller는 Service의 결과물을 Client에게 전달해준다
+
 1) CONTROLLER
 - @RestController
 = @Controller + @ResponseBody 
@@ -298,4 +309,9 @@ JPA는 데이터베이스 스키마를 자동으로 생성하는 기능을 지�
   - @JoinColumn = 외래 키 매핑
 
 5) REPOSITORY
+= JPA에서의 DB Layer 접근자
+= Entity에 의해 생성된 DB에 접근하는 메서드들을 사용하기 위한 인터페이스이다. (EX.`findAll()`)
+
 6) SERVICE
+Controller가 Request에 대해 **어떻게** 처리할까라면, 
+Service는 Request에 대해 어떤 처리를 할까에 대해 다루고 있다.
