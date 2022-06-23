@@ -289,8 +289,13 @@ tasks.withType<Test> {
   - @NotBlank = NULL, "", " " 모두 허용하지 않음 
 
 4) ENTITY  
-JPA
+JPA는 데이터베이스 스키마를 자동으로 생성하는 기능을 지원한다  
 - @Entity = 테이블과의 매핑
-- @Table = Entity와 매핑할 테이블 지정
+- @Table = Entity와 매핑할 테이블 지정
+- 연관관계
+  - @OneToMany / @ManyToOne = 일대다 / 다대일 관계
+    - fetchType.Lazy = 지연 로딩
+  - @JoinColumn = 외래 키 매핑
+
 5) REPOSITORY
 6) SERVICE
